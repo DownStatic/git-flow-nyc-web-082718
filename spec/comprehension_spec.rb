@@ -14,7 +14,7 @@ describe "GIT" do
 
   it "3. What is the syntax for committing all staged changes with the message 
       'update link styles'?" do
-    answer = "git commit 'update link styles'"
+    answer = "git commit -m 'update link styles'"
     encoded_answer = "8d06e2760cda4755f387db0db0e6c425b2ece976"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -94,7 +94,7 @@ describe "GIT" do
 
   it "13. From the add-img branch, what command do you run to fetch and merge all the 
       changes from the add-img branch on the remote 'origin'?" do
-    answer = "git merge origin"
+    answer = "git merge origin add-img"
     encoded_answer = "96887ba3f8740e85c07e4ee6bebba55ad8c779d0"
     expect(encode(answer)).to eq(encoded_answer)
   end
